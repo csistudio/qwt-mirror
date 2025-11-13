@@ -14,10 +14,10 @@ target_compile_definitions(qwt PRIVATE QWT_MOC_INCLUDE=1)
 
 target_link_libraries(qwt
     PUBLIC
-    Qt${QT_VERSION}::Widgets
-    Qt${QT_VERSION}::OpenGL
-    Qt${QT_VERSION}::Svg
-    Qt${QT_VERSION}::PrintSupport
-    Qt${QT_VERSION}::Xml
-    Qt${QT_VERSION}::Concurrent
+    ${QTNS}::Widgets
+    ${QTNS}::OpenGL
+    ${QTNS}::Svg
+    ${QTNS}::PrintSupport
+    ${QTNS}::Xml
+    ${QTNS}::Concurrent
 )

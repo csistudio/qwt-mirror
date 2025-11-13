@@ -15,7 +15,7 @@ target_compile_definitions(qwt PRIVATE QWT_MOC_INCLUDE=1)
 target_link_libraries(qwt
     PUBLIC
     ${QTNS}::Widgets
-    ${QTNS}::OpenGL
+    ${QTNS}::OpenGLWidgets
     ${QTNS}::Svg
     ${QTNS}::PrintSupport
     ${QTNS}::Xml
